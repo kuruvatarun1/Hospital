@@ -1,0 +1,58 @@
+<style>
+    table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    }
+    th, td {
+    background-color: #96D4D4;
+    }
+</style>
+
+<div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div><h3 style="text-align: center; background-color: rgb(18, 207, 240);">Receptionist List</h3></div>
+            <div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table style="table-layout: fixed;">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Gender</th>
+                                    <th>Address</th>
+                                    <th>Active Status</th>
+                                    <th>Logged Status</th>
+                                    <th>Last LoginTime</th>
+                                    <th>Last LogoutTime</th>
+                                    <th>Operations</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let recp of recpList">
+                                    <td>{{recp.rEmpId}}</td>
+                                    <td>{{recp.name}}</td>
+                                    <td>{{recp.email}}</td>
+                                    <td>{{recp.phone}}</td>
+                                    <td>{{recp.gender}}</td>
+                                    <td>{{recp.address}}</td>
+                                    <td>{{recp.active}}</td>
+                                    <td>{{recp.logged}}</td>
+                                    <td>{{recp.logintime}}</td>
+                                    <td>{{recp.logouttime}}</td>
+                                    <td>
+                                        <input type="button" class="btn btn-success" value="Update" (click)="btn_UpdateRecp(recp.rEmpId)" />
+                                        <input type="button" class="btn btn-warning" value="Delete" (click)="btn_DeleteRecp(recp.rEmpId)" />
+                                    </td>
+                                </tr>
+                            </tbody>    
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

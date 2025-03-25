@@ -1,0 +1,60 @@
+<style>
+    table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    }
+    th, td {
+    background-color: #96D4D4;
+    }
+</style>
+
+<div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div><h3 style="text-align: center; background-color: rgb(18, 207, 240);">Doctors List</h3></div>
+            <div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table style="table-layout: fixed;">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Specialization</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Gender</th>
+                                    <th>Address</th>
+                                    <th>Active Status</th>
+                                    <th>Logged Status</th>
+                                    <th>Last LoginTime</th>
+                                    <th>Last LogoutTime</th>
+                                    <th>Operations</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let doc of doclist">
+                                    <td>{{doc.docEmpId}}</td>
+                                    <td>{{doc.name}}</td>
+                                    <td>{{doc.specialization}}</td>
+                                    <td>{{doc.email}}</td>
+                                    <td>{{doc.phone}}</td>
+                                    <td>{{doc.gender}}</td>
+                                    <td>{{doc.address}}</td>
+                                    <td>{{doc.active}}</td>
+                                    <td>{{doc.logged}}</td>
+                                    <td>{{doc.logintime}}</td>
+                                    <td>{{doc.logouttime}}</td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="btn btn-success" value="Update" (click)="btnUpdateDoc_click(doc.docEmpId)" />
+                                        &nbsp;<input type="button" class="btn btn-warning" value="Delete" (click)="btnDeleteDoc_click(doc.docEmpId)" />
+                                    </td>
+                                </tr>
+                            </tbody>    
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

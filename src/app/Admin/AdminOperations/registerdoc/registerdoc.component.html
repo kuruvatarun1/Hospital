@@ -1,0 +1,85 @@
+<div class="outer">
+    <div><h4 style="text-align: center;">Register Doctor</h4></div>
+    <div class="row" style="margin-bottom: 15px ;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Name :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="docemp.name" id="txtName" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Specialization :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="docemp.specialization" id="txtEmail" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Email :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="docemp.email" id="txtEmail" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Password :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="docemp.password" id="txtPwd" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Phone :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="docemp.phone" id="txtPhone" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Select Gender :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="Radio" value="Male" [(ngModel)]="docemp.gender" name="Gender" id="radMale"/> Male
+            <input type="Radio" value="Female" [(ngModel)]="docemp.gender" name="Gender" id="radFemale"/> Female
+            <input type="Radio" value="Others" [(ngModel)]="docemp.gender" name="Gender" id="radOthers"/> Others
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Address :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="docemp.address" id="txtAdrs" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 3%;">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <input type="button" style="margin-left: 50px;" value="Submit" (click)="btn_RegisterDoc()" id="btnSubmit" class="btn btn-success">
+            <input type="button" style="margin-left: 40px;" value="Reset" (click)="btn_Reset()" id="btnReset" class="btn btn-warning">
+            <input type="button" style="margin-left: 40px;" value="Cancel" (click)="btn_Cancel()" id="btnCancel" class="btn btn-danger">
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    
+</div>

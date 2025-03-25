@@ -1,0 +1,83 @@
+<div>
+    <div class="row" style="margin-bottom: 15px ;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>ID :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="emp.docEmpId" id="txtName" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 15px ;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Name :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="emp.name" id="txtName" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Email :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="emp.email" id="txtEmail" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Password :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="emp.password" id="txtPwd" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Phone :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="emp.phone" id="txtPhone" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Gender :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="Radio" value="Male" [(ngModel)]="emp.gender" name="Gender" id="radMale"/> Male
+            <input type="Radio" value="Female" [(ngModel)]="emp.gender" name="Gender" id="radFemale"/> Female
+            <input type="Radio" value="Others" [(ngModel)]="emp.gender" name="Gender" id="radOthers"/> Others
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Address :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="emp.address" id="txtAdrs" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 3%;">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <input type="button" style="margin-left: 50px;" (click)="btn_DeleteDoc()" value="Delete" id="btnSubmit" class="btn btn-success">
+            <input type="button" style="margin-left: 40px;" (click)="btn_Cancel()" value="Cancel" id="btnCancel" class="btn btn-danger">
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    
+</div>

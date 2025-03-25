@@ -1,0 +1,50 @@
+<div style="margin-top: 10px;">
+    <div class="row" style="margin: top 10px;margin-bottom: 15px ;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Select Department</h4>
+        </div>
+        <div class="col-sm-3">
+            <select class="form-select" [(ngModel)]="departmentNo" aria-label="Default select example">
+                <option value="0">Select Department</option>
+                <option value="11">Doctor</option>
+                <option value="12">Helper</option>
+                <option value="13">Lab Assistant</option>
+                <option value="14">Receptionist</option>
+            </select>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 15px ;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <!-- <h4>Enter UserID</h4> -->
+            <h4>Enter Email</h4>
+        </div>
+        <div class="col-sm-3">
+            <!-- <input type="text" class="form-control" placeholder="User ID" id="txtUID"> -->
+            <input type="text" [(ngModel)]="email" class="form-control" placeholder="Email" id="txtEmail">
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 15px ;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Password</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="password" [(ngModel)]="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 20% ;">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-2">
+            <input type="button" value="Submit" class="btn btn-primary" (click)="btn_EmpLogin()" id="btnLogSubmit"  >
+        </div>
+        <div class="col-sm-2">
+            <input type="button" value="Cancel" class="btn btn-warning" id="btnLogCancel" >
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>

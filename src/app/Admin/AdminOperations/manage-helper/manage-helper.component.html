@@ -1,0 +1,58 @@
+<style>
+    table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    }
+    th, td {
+    background-color: #96D4D4;
+    }
+</style>
+
+<div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div><h3 style="text-align: center; background-color: rgb(18, 207, 240);">Helper List</h3></div>
+            <div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table style="table-layout: fixed;">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Gender</th>
+                                    <th>Address</th>
+                                    <th>Active Status</th>
+                                    <th>Logged Status</th>
+                                    <th>Last LoginTime</th>
+                                    <th>Last LogoutTime</th>
+                                    <th>Operations</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let hlp of helperList">
+                                    <td>{{hlp.hEmpId}}</td>
+                                    <td>{{hlp.name}}</td>
+                                    <td>{{hlp.email}}</td>
+                                    <td>{{hlp.phone}}</td>
+                                    <td>{{hlp.gender}}</td>
+                                    <td>{{hlp.address}}</td>
+                                    <td>{{hlp.active}}</td>
+                                    <td>{{hlp.logged}}</td>
+                                    <td>{{hlp.logintime}}</td>
+                                    <td>{{hlp.logouttime}}</td>
+                                    <td>
+                                        <input type="button" class="btn btn-success" value="Update" (click)="btn_Updatehlp(hlp.hEmpId)" />
+                                        <input type="button" class="btn btn-warning" value="Delete" (click)="btn_Deletehlp(hlp.hEmpId)" />
+                                    </td>
+                                </tr>
+                            </tbody>    
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

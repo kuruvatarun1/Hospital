@@ -1,0 +1,30 @@
+<style>
+    .vl {
+      border-left: 6px solid rgb(29, 33, 56);
+      border-right: 6px solid rgb(29, 33, 56);
+      border-top: 6px solid rgb(29, 33, 56);
+      border-bottom: 6px solid rgb(29, 33, 56);
+    }
+</style>
+
+<div class="vl">
+    <div class="row">
+        <div class="col-sm-2">
+            <div>
+                <hr>
+                <input type="button" style="width: 110%;" class="btn btn-danger" value="My Profile"/>
+                <hr>
+            </div>
+            <div>
+                <hr>
+                <input type="button" style="width: 110%;" (click)="btn_LogOut()" class="btn btn-danger" value="LogOut"/>
+                <hr>
+            </div>
+        </div>
+        <div class="col-sm-10">
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<style>
+    .vl {
+      border-left: 6px solid rgb(29, 33, 56);
+      border-right: 6px solid rgb(29, 33, 56);
+      border-top: 6px solid rgb(29, 33, 56);
+      border-bottom: 6px solid rgb(29, 33, 56);
+    }
+</style>
+
+<div class="vl" style="width: 100%;">
+    <div class="row">
+        <div class="col-sm-2">
+            <div>
+                <hr>
+                <input type="button" style="width: 110%; text-align: left;" class="btn btn-danger" value="My Profile" (click)="btn_MyProfile()"/>
+                <hr>
+            </div>
+            <div>
+                <input type="button" style="width: 110%;" class="btn btn-info" (click)="btn_MngDoc()" value="Manage Branch" />
+                <input type="button" style="width: 110%;" class="btn btn-warning" (click)="btn_RegisterDoc()" value="Register Doctors" />
+            </div>
+            <div>
+                <input type="button" style="width: 110%;" class="btn btn-info" (click)="btn_MngHelper()" value="Manage Helper" />
+                <input type="button" style="width: 110%;" class="btn btn-warning" (click)="btn_RegisterHelper()" value="Register Helper" />
+            </div>
+            <div>
+                <input type="button" style="width: 110%;" class="btn btn-info" (click)="btn_MngLabass()" value="Manage LabAssistant" />
+                <input type="button" style="width: 110%;" class="btn btn-warning" (click)="btn_RegisterLabass()" value="Register LabAssistant" />
+            </div>
+            <div>
+                <input type="button" style="width: 110%;" class="btn btn-info" (click)="btn_MngRecp()" value="Manage Receptionist" />
+                <input type="button" style="width: 110%;" class="btn btn-warning" (click)="btn_RegisterRecp()" value="Register Receptionist" />
+            </div>
+            <div>
+                <hr>
+                <input type="button" style="width: 95%;" class="btn btn-danger" value="LogOut" (click)="btn_Logout()"/>
+                <hr>
+            </div>
+        </div>
+        <div style="margin-bottom: 100px;" class="col-sm-10">
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+<body>
+    <div>
+     <table width="100%">
+         <tr> 
+             <td colspan="4"><h1 style="text-align: center; background-color: blue;color:goldenrod;"><u>Admin REGISTRATION</u></h1></td>
+         </tr>
+    
+         <tr height="40px">
+             <td width="35%"></td>
+             <td width="15%"><b> Name</b></td>
+             <td width="25%">
+                 <input class="form-control" type="text" id="txtename" [(ngModel)]="Ad.adminName"  placeholder="please enter employee name..!"/>
+             </td>
+             <td width="25%"></td>
+         </tr>
+         <tr height="40px">
+             <td width="35%"></td>
+             <td width="15%"><b>gender</b></td>
+             <td width="25%">
+                 <input  type="radio" id="rdtnmale" name="gender" value="male" [(ngModel)]="Ad.gender"  />Male
+                 <input style="margin-left: 50px;"  type="radio" id="rdtnfemale" name="gender" [(ngModel)]="Ad.gender"  value="female"/>Female
+             </td>
+             <td width="25%"></td>
+         </tr>
+
+         <tr height="40px">
+             <td width="35%"></td>
+             <td width="15%"><b>E-mail id</b></td>
+             <td width="25%">
+                 <input class="form-control"  type="text" id="txtemplemailid"  [(ngModel)]="Ad.email"   placeholder="please enter employee E-mail id..!"/>
+             </td>
+             <td width="25%"></td>
+         </tr>
+
+         <tr height="40px">
+             <td width="35%"></td>
+             <td width="15%"><b>password</b></td>
+             <td width="25%">
+                 <input class="form-control"  type="password" id="txtpassword" [(ngModel)]="Ad.password"   placeholder="please enter password..!"/>
+             </td>
+             <td width="25%"></td>
+         </tr>
+   
+         <tr height="40px">
+             <td width="35%"></td>
+             <td width="15%"><b>phone number</b></td>
+             <td width="25%">
+                 <input class="form-control"  type="text" id="txtemplphone" [(ngModel)]="Ad.phone"  placeholder="please enter employee phone number..!"/>
+             </td>
+             <td width="25%"></td>
+         </tr>
+       
+
+      
+      <tr height="40px">
+             <td width="35%"></td>
+             <td width="15%"><b>department</b></td>
+             <td width="25%">                
+                 <select class="form-control" [(ngModel)]="Ad.deptNo"   id="ddldpet no">
+                     <option value="0"> select department</option>
+                    <option *ngFor="let dept of DeptList" value="{{dept.deptNo}}" >{{dept.deptName }}</option>
+                 </select>
+             </td>
+             <td width="25%"></td>
+         </tr>
+
+    
+
+         <tr height="40px">
+             <td width="35%"></td>
+             <td width="15%"><b>address</b></td>
+             <td width="25%">
+                 <textarea class="form-control"  id="txtaddress" [(ngModel)]="Ad.address"  rows="5" placeholder="please enter employee address..!"></textarea>
+             </td>               
+         </tr>
+
+
+
+
+     
+       
+     </table>
+    </div>
+<div style="text-align: center;margin-top: 45px;margin-bottom: 25px;">
+ <input class="btn btn-success" style="margin-right: 45px;" type="button" value="register" id="btnregister" (click)="btnregister()" />&nbsp;&nbsp;&nbsp;
+    <input class="btn btn-danger" style="margin-left: 45px;" type="button" value="cancle" id="btncancle" />
+</div>
+
+</body>
